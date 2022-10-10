@@ -13,10 +13,11 @@ const Home = () => {
         </p>
         <div className="flex flex-wrap justify-center">
           <button className="px-8 py-3 m-2 text-lg font-semibol bg-purple-600 rounded-lg hover:rounded-lg hover:bg-purple-900">
-            Get started
+            Start Quiz
           </button>
         </div>
       </div>
+      <hr />
     </section>
   );
 };

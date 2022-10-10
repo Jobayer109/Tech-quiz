@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container flex justify-between h-16 mx-auto">
         <Link
           rel="noopener noreferrer"
-          href="/"
+          to="/"
           aria-label="Back to homepage"
           className="flex items-center p-2"
         >
@@ -21,7 +21,7 @@ const Header = () => {
           <li className="flex">
             <Link
               rel="noopener noreferrer"
-              href="/"
+              to="/"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
             >
               Home
@@ -30,7 +30,7 @@ const Header = () => {
           <li className="flex">
             <Link
               rel="noopener noreferrer"
-              href="/topics"
+              to="/topics"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
             >
               Topics
@@ -39,7 +39,7 @@ const Header = () => {
           <li className="flex">
             <Link
               rel="noopener noreferrer"
-              href="/statistics"
+              to="/statistics"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
             >
               Statistics
@@ -48,14 +48,14 @@ const Header = () => {
           <li className="flex">
             <Link
               rel="noopener noreferrer"
-              href="/blogs"
+              to="/blogs"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
             >
               Blogs
             </Link>
             <Link
               rel="noopener noreferrer"
-              href="/about"
+              to="/about"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
             >
               About
