@@ -17,7 +17,7 @@ const Header = () => {
         </Link>
 
 
-        <ul className="items-stretch hidden space-x-3 md:flex font-semibold text-lg">
+        <ul className="items-stretch hidden space-x-3 md:flex font-semibold text-lg text-purple-600">
           <li className="flex">
             <Link
               rel="noopener noreferrer"
@@ -79,8 +79,7 @@ const Header = () => {
           </svg>
         </button>
       </div>
-    
-    </header>
+        </header>
   );
 };
 

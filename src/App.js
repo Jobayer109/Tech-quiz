@@ -2,9 +2,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Topics from './components/Topics/Topics';
+import { quizLoaderFunc } from './Loader/quizLoader';
 import Main from './Main/Main';
 
 
@@ -15,6 +17,8 @@ function App() {
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
+      loader: quizLoaderFunc,
       children: [
         {
           path: '/',
@@ -46,7 +50,7 @@ function App() {
  
 
   return (
-    <div className="App">
+    <div className="App bg-black">
       <RouterProvider router={router}>
 
       </RouterProvider>
