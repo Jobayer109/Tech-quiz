@@ -6,7 +6,7 @@ import Header from '../components/Header/Header';
 export const QuizContext = React.createContext([])
 const Main = () => {
     const quizz = useLoaderData()
-    console.log(quizz.data)
+
    
     return (
         <QuizContext.Provider value={quizz.data}>
