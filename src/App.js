@@ -37,12 +37,11 @@ function App() {
           path: '/topic/:quizId',
           loader: quizDetailsFunc,           
           element: <Quiz></Quiz>
-          },
-         
+        },
         {
           path: 'statistics',
           element: <Statistics></Statistics>
-        },
+        },         
         {
           path: 'blogs',
           element: <Blogs></Blogs>

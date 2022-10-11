@@ -7,7 +7,7 @@ const Quiz = () => {
     console.log(quizz.data.name)
     return (
         <div>
-            <h1 className='text-white text-xl font-semibold'> Quiz of <span className='font-bold text-4xl text-yellow-300'>
+            <h1 className='text-white text-4xl font-bold'> Quiz <span className='text-xl'>of</span> <span className='font-bold text-4xl text-yellow-300'>
                 {quizz.data.name}</span></h1>
             <div className=''>
             {

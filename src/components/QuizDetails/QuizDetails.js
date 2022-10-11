@@ -11,7 +11,7 @@ const QuizDetails = ({ quiz }) => {
 
   return (
       <div>
-           <div className="border rounded-lg w-[60%] mx-auto m-8 bg-purple-500 p-4">
+           <div className="rounded-lg w-[60%] mx-auto m-8 bg-purple-500 p-4">
           <div className='flex justify-end mr-5'>
           <EyeIcon className="h-8 w-8 text-white mr-0"/>
               </div>
