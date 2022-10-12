@@ -19,7 +19,7 @@ const Blogs = () => {
                 </h3>
 
                 <p className="mt-3 text-xl">
-                  <span className="text-xl font-semibold text-purple-500">Answer: </span>
+                  <span className="text-xl font-semibold text-purple-300">Answer: </span>
                   React Router is a standard library for routing in React. It enables the navigation
                   among views of various components in a React Application, allows changing the
                   browser URL, and keeps the UI in sync with the URL.
@@ -30,7 +30,7 @@ const Blogs = () => {
                   How does work context API ?
                 </h3>
                 <p className="mt-3 text-xl">
-                  <span className="text-xl font-semibold text-purple-500">Answer: </span>
+                  <span className="text-xl font-semibold text-purple-300">Answer: </span>
                   The React Context API is a way for a React app to effectively produce global
                   variables that can be passed around. This is the alternative to "prop drilling" or
                   moving props from grandparent to child to parent, and so on. Context is also
@@ -38,9 +38,9 @@ const Blogs = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">
-                <h3 className="text-2xl font-semibold tracking-wide text-purple-300">What is useRef ?</h3>
+                <h className="text-2xl font-semibold tracking-wide text-purple-300">What is useRef ?</h>
                 <p className="mt-3 text-xl">
-                  <span className="text-xl font-semibold text-purple-400">Answer: </span>
+                  <span className="text-xl font-semibold text-purple-300">Answer: </span>
                   The useRef Hook allows you to persist values between renders. It can be used to
                   store a mutable value that does not cause a re-render when updated. It can be used
                   to access a DOM element directly.

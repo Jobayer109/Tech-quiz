@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../../Resources/Images/logo.png';
+
 
 const Header = () => {
   return (
     <header className="p-2 bg-black text-gray-100 shadow-xl px-20">
       <div className="container flex justify-between h-16 mx-auto">
-        <Link
+        <NavLink
           rel="noopener noreferrer"
           to="/"
           aria-label="Back to homepage"
@@ -14,52 +15,52 @@ const Header = () => {
         >
           <img className="h-24 w-24 " src={logo} alt="" />
           <h2 className="font-bold text-2xl">Tech Quiz</h2>
-        </Link>
+        </NavLink>
 
 
         <ul className="items-stretch hidden space-x-3 md:flex font-semibold text-md text-purple-400">
           <li className="flex">
-            <Link
+            <NavLink
               rel="noopener noreferrer"
               to="/"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="flex">
-            <Link
+            <NavLink
               rel="noopener noreferrer"
               to="/topics"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Topics
-            </Link>
+            </NavLink>
           </li>
           <li className="flex">
-            <Link
+            <NavLink
               rel="noopener noreferrer"
               to="/statistics"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Statistics
-            </Link>
+            </NavLink>
           </li>
           <li className="flex">
-            <Link
+            <NavLink
               rel="noopener noreferrer"
               to="/blogs"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Blogs
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               rel="noopener noreferrer"
               to="/about"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               About
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <button className="flex justify-end p-4 md:hidden">
