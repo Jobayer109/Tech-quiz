@@ -6,13 +6,13 @@ import Header from '../components/Header/Header';
 export const QuizContext = React.createContext([])
 const Main = () => {
     const quizz = useLoaderData()
-
+  
    
     return (
         <QuizContext.Provider value={quizz.data}>
-            <Header></Header>
-            <Outlet></Outlet>
-            <Footer></Footer>
+                <Header></Header>
+                <Outlet></Outlet>
+                <Footer></Footer>
        </QuizContext.Provider>
         
     );
