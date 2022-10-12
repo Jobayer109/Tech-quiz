@@ -7,7 +7,7 @@ const Statistics = () => {
     console.log(quizz)
     return (
         <div className=' my-6 w-[50%] mx-auto'>
-           <BarChart width={630} height={500} data={quizz}>
+           <BarChart width={830} height={400} data={quizz}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="name" />
   <YAxis />
