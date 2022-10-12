@@ -1,5 +1,5 @@
 import { EyeIcon } from '@heroicons/react/24/solid';
-import React, { useState } from "react";
+import React from "react";
 import { toast } from 'react-toastify';
 import "./QuizItem.css";
 
@@ -7,39 +7,33 @@ import "./QuizItem.css";
 const QuizItem = ({ quiz}) => {
   const { question, correctAnswer, options } = quiz;
 
-  const {count, setCount}=useState(0)
-    
+   
   const handleCorrection = (correctAnswer) => {
     options.map(option => {
-      console.log(option);
+    
       if (option === correctAnswer ?
         toast.success(correctAnswer, { autoClose: 3000 }) : " ") {  
         } 
-        // setCount(count+1)
-    })
-
-   
+      })  
     }
-
-
    
   return (
     <div>
-      <div className="rounded-lg w-[60%] mx-auto m-8 bg-purple-500 p-4">
-        <div className="flex justify-end mr-5">
+      <div className="rounded-lg w-[60%] bg-gray-900 mx-auto py-auto m-8 p-8 border border-x-0">
+        <div className="flex justify-end">
           <EyeIcon onClick={()=>handleCorrection(correctAnswer)} className="h-8 w-8 text-white mr-0" />
         </div>
-        <div className="flex w-[90%] mx-auto justify-around items-center py-4 bg-black rounded-xl p-3 text-yellow-200 text-2xl">
+        <div className="flex w-[90%] mx-auto justify-around items-center py-3 bg-black rounded-xl p-3 text-yellow-200 text-xl"> 
           <h2 className="">{question.replace( /(<([^>]+)>)/ig, '')}</h2>
         </div>
-        <div className="grid grid-cols-2 text-white font-mono font-semibold">
+        <div className="grid grid-cols-2 text-white font-semibold">
           {
             options.map(option => 
 
-              <div  onClick={() => handleCorrection(correctAnswer)} className="rounded-lg bg-gray-700 hover:bg-black w-[80%] h-auto mx-auto flex items-center px-2 py-4 my-3">
+              <div  onClick={() => handleCorrection(correctAnswer)} className="rounded-lg bg-purple-500 hover:bg-black w-[90%] h-auto mx-auto flex items-center px-2 py-2 my-3 border">
                 <div>
-                  <input className='h-6 w-6' type="radio" />  
-             <button className="pl-6 text-lg">
+                  <input className='h-4 w-4' type="radio" />  
+             <button className="pl-6 text-md">
                 {option}
               </button>
               </div>

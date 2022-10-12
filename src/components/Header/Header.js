@@ -4,7 +4,7 @@ import logo from '../../Resources/Images/logo.png';
 
 const Header = () => {
   return (
-    <header className="p-4 bg-black text-gray-100 shadow-xl px-20">
+    <header className="p-2 bg-black text-gray-100 shadow-xl px-20">
       <div className="container flex justify-between h-16 mx-auto">
         <Link
           rel="noopener noreferrer"
@@ -17,12 +17,12 @@ const Header = () => {
         </Link>
 
 
-        <ul className="items-stretch hidden space-x-3 md:flex font-semibold text-lg text-purple-600">
+        <ul className="items-stretch hidden space-x-3 md:flex font-semibold text-md text-purple-400">
           <li className="flex">
             <Link
               rel="noopener noreferrer"
               to="/"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Home
             </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             <Link
               rel="noopener noreferrer"
               to="/topics"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Topics
             </Link>
@@ -40,7 +40,7 @@ const Header = () => {
             <Link
               rel="noopener noreferrer"
               to="/statistics"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Statistics
             </Link>
@@ -49,14 +49,14 @@ const Header = () => {
             <Link
               rel="noopener noreferrer"
               to="/blogs"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               Blogs
             </Link>
             <Link
               rel="noopener noreferrer"
               to="/about"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent  hover:text-white"
             >
               About
             </Link>

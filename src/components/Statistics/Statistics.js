@@ -4,10 +4,9 @@ import { QuizContext } from '../../Main/Main';
 
 const Statistics = () => {
     const quizz = useContext(QuizContext)
-    console.log(quizz)
     return (
-        <div className=' my-6 w-[50%] mx-auto'>
-           <BarChart width={830} height={400} data={quizz}>
+        <div className=' my-6 w-[50%] mx-auto h-auto py-12'>
+           <BarChart width={630} height={300} data={quizz}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="name" />
   <YAxis />
